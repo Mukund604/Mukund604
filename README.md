@@ -49,9 +49,3 @@ I specialize in building production-grade forecasting, NLP, and Agentic AI syste
 * **MS in Computer Science & Engineering** | **UC Santa Cruz** (GPA: 3.9/4.0) | *Expected June 2026*
 * **B.Tech in Computer Science Engineering** | **Chitkara University** (GPA: 4.0/4.0)
 * **Certifications**: Generative AI with LLMs (DeepLearning.AI & AWS), Machine Learning Specialization (Stanford Online)
-
----
-
-## 📊 GitHub Analytics
-![Mukund's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mukund604&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mukund604&layout=compact&theme=radical)
