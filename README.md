@@ -73,7 +73,9 @@ When agents share memory, one wrong update can quietly spread through the whole 
 
 I built a harness that checks every model proof with the Lean 4 compiler, then ran 222 runs across 30 problems, 8 difficulty strata and 3 seeds. A common 180 second timeout understated pass rates **3x**, and every failure was sorted into a taxonomy.
 
+<p align="center">
 <a href="https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean"><img src="assets/lean_failures.png" width="75%" alt="Failure categories per model" /></a>
+</p>
 
 ### 3. RAG Robots: Retrieval-Augmented Generation for Enhanced Robotic Task Planning *(preprint, 2026)*
 Gives robot agents retrieval over a hybrid graph and vector database, so a planner agent trained with PPO acts on retrieved, task specific knowledge instead of what the language model guesses. Evaluated on furniture assembly tasks, where retrieval cut hallucination driven errors.
