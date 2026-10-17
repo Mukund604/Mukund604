@@ -80,8 +80,18 @@ I built a harness that checks every model proof with the Lean 4 compiler, then r
 ### 3. RAG Robots: Retrieval-Augmented Generation for Enhanced Robotic Task Planning *(preprint, 2026)*
 Gives robot agents retrieval over a hybrid graph and vector database, so a planner agent trained with PPO acts on retrieved, task specific knowledge instead of what the language model guesses. Evaluated on furniture assembly tasks, where retrieval cut hallucination driven errors.
 
+<p align="center">
+<img src="assets/rag_robots_sim.png" width="45%" alt="Simulated robot arm on a furniture assembly task" />
+<br/><sub>Simulated furniture assembly task used for evaluation</sub>
+</p>
+
 ### 4. Two Stage Residual Models for Robust Cloud Ramp Prediction *(preprint, 2025)*
 Forecasts sudden drops in solar output when clouds pass over utility scale plants. A baseline regressor makes the first forecast, and a temporal convolutional network with XGBoost learns to correct its errors.
+
+<p align="center">
+<img src="assets/ramp_events.png" width="85%" alt="Irradiance ramp rate on a cloudy day versus a clear day" />
+<br/><sub>The problem: irradiance swings on a cloudy day (left) versus a clear day (right)</sub>
+</p>
 
 ---
 
