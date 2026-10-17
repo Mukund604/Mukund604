@@ -114,9 +114,10 @@ A UCSC only marketplace for listings, housing and chat. Sign in is limited to ve
 A marketplace and community app for Volkswagen, Audi and Skoda enthusiasts in India: parts and cars, group buys, events and messaging. The API has rotating refresh tokens, Postgres full text search with a radius filter, Redis backed rate limits across replicas, and a dealer verification queue in a Next.js admin dashboard. **React Native, Expo, TypeScript, NestJS, PostgreSQL, Redis, Docker.**
 
 ### The Select Social, in development
-<img src="assets/selectsocial_ios.png" width="70%" alt="The Select Social iOS screens" />
+<img src="assets/selectsocial_onboarding.png" width="100%" alt="The Select Social: landing, sign in, onboarding and membership screens" />
+<img src="assets/selectsocial_members.png" width="100%" alt="The Select Social: weekly introductions and match profile screens" />
 
-An invite only dating app built around three curated introductions a week instead of a swipe feed. It has a 19 step onboarding flow, live camera selfie verification, a waitlist with referrals, and chat, all covered by 317 unit tests. **Swift, SwiftUI, Swift Concurrency, XCTest.**
+An invite only dating app for urban India, built around three curated introductions every Friday instead of a swipe feed. Applicants sign in by phone, email, Apple or Google, then go through a 19 step onboarding flow and live camera selfie verification before a hand review. Members get a weekly hero match plus two more, a "why we matched you" breakdown, chat with in-app date planning, and a subscription paywall. 317 unit tests cover every service and view model. **Swift, SwiftUI, Swift Concurrency, XCTest.**
 
 ### Client and personal sites
 <table>
