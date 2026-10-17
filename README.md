@@ -6,6 +6,8 @@
 Lead App Engineer at TopTutors · Founder of <a href="https://graderight.org">GradeRight.org</a> · MS CS at UC Santa Cruz, graduating December 2026
 </p>
 
+<p align="center"><i>Open to full time software engineering and AI engineering roles starting January 2027.</i></p>
+
 <p align="center">
 <a href="https://mukundojha.dev"><img src="https://img.shields.io/badge/Portfolio-mukundojha.dev-000000?style=for-the-badge" /></a>
 <a href="https://www.linkedin.com/in/mukund604/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -19,7 +21,7 @@ Lead App Engineer at TopTutors · Founder of <a href="https://graderight.org">Gr
 <td align="center"><h3>100+</h3>production releases</td>
 <td align="center"><h3>4</h3>engineers led</td>
 <td align="center"><h3>$50K+</h3>saved a year at Avaada</td>
-<td align="center"><h3>2</h3>papers under review</td>
+<td align="center"><h3>4</h3>papers, 2 under review</td>
 </tr>
 </table>
 
@@ -47,9 +49,13 @@ I lead 4 engineers on a multitenant B2B school platform (Next.js, React, Postgre
 
 ---
 
-## Research
+## Publications
 
-### Commit Before Trust: Transactional Shared Memory for Multi-Agent LLMs *(under review)*
+4 papers: 2 under review in 2026 and 2 preprints.
+
+### 1. Commit Before Trust: Transactional Shared Memory for Multi-Agent LLMs *(under review, 2026)*
+*Mukund Ojha, Sakshi Konnur, Saranya Kolachana · UC Santa Cruz*
+
 
 When agents share memory, one wrong update can quietly spread through the whole workflow. We treat shared memory like a database: agents propose, a guard decides, and checkpoints undo mistakes.
 
@@ -61,11 +67,19 @@ When agents share memory, one wrong update can quietly spread through the whole 
 | Exact match, same setting | **0.50 to 0.54** |
 | Injected contradictions caught by the guard | **50 of 50** on HotpotQA, **50 of 50** on FEVER |
 
-### [Diagnosing How Frontier LLMs Fail at Lean: A miniF2F-v2 Evaluation Study](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean) *(under review)*
+### 2. [Diagnosing How Frontier LLMs Fail at Lean: A miniF2F-v2 Evaluation Study](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean) *(under review, 2026)*
+*Mukund Ojha · UC Santa Cruz · [code and results](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean)*
+
 
 I built a harness that checks every model proof with the Lean 4 compiler, then ran 222 runs across 30 problems, 8 difficulty strata and 3 seeds. A common 180 second timeout understated pass rates **3x**, and every failure was sorted into a taxonomy.
 
 <a href="https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean"><img src="assets/lean_failures.png" width="75%" alt="Failure categories per model" /></a>
+
+### 3. RAG Robots: Retrieval-Augmented Generation for Enhanced Robotic Task Planning *(preprint, 2026)*
+Gives robot agents retrieval over a hybrid graph and vector database, so a planner agent trained with PPO acts on retrieved, task specific knowledge instead of what the language model guesses. Evaluated on furniture assembly tasks, where retrieval cut hallucination driven errors.
+
+### 4. Two Stage Residual Models for Robust Cloud Ramp Prediction *(preprint, 2025)*
+Forecasts sudden drops in solar output when clouds pass over utility scale plants. A baseline regressor makes the first forecast, and a temporal convolutional network with XGBoost learns to correct its errors.
 
 ---
 
