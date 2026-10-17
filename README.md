@@ -93,6 +93,12 @@ Forecasts sudden drops in solar output when clouds pass over utility scale plant
 <br/><sub>The problem: irradiance swings on a cloudy day (left) versus a clear day (right)</sub>
 </p>
 
+<p align="center">
+<img src="assets/ramp_power_cloudy.png" width="49%" alt="Plant power output on a cloudy day" />
+<img src="assets/ramp_power_clear.png" width="49%" alt="Plant power output on a clear day" />
+<br/><sub>What it does to a utility scale plant: output swings by more than 150 MW in under an hour on a cloudy day (left), compared with a smooth curve on a clear day (right)</sub>
+</p>
+
 ---
 
 ## Apps I've built
