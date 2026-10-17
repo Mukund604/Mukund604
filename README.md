@@ -69,25 +69,42 @@ I built a harness that checks every model proof with the Lean 4 compiler, then r
 
 ---
 
-## Shipped and shipping
+## Apps I've built
 
+### SlugMarket, live on the App Store
+<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><img src="assets/slugmarket_ios.png" width="100%" alt="SlugMarket iOS screens" /></a>
+
+A UCSC only marketplace for listings, housing and chat. Sign in is limited to verified ucsc.edu Google accounts, data is locked down with Postgres row level security, and buyers and sellers get real time chat with push notifications. **Swift, SwiftUI, Supabase, PostgreSQL, APNs.** There's also a web version in Next.js.
+
+### VagBay, launching soon
+<img src="assets/vagbay_ios.png" width="100%" alt="VagBay screens" />
+
+A marketplace and community app for Volkswagen, Audi and Skoda enthusiasts in India: parts and cars, group buys, events and messaging. The API has rotating refresh tokens, Postgres full text search with a radius filter, Redis backed rate limits across replicas, and a dealer verification queue in a Next.js admin dashboard. **React Native, Expo, TypeScript, NestJS, PostgreSQL, Redis, Docker.**
+
+### The Select Social, in development
+<img src="assets/selectsocial_ios.png" width="70%" alt="The Select Social iOS screens" />
+
+An invite only dating app built around three curated introductions a week instead of a swipe feed. It has a 19 step onboarding flow, live camera selfie verification, a waitlist with referrals, and chat, all covered by 317 unit tests. **Swift, SwiftUI, Swift Concurrency, XCTest.**
+
+### Client and personal sites
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><img src="assets/slugmarket.png" alt="SlugMarket" /></a>
-<b><a href="https://apps.apple.com/us/app/slugmarket/id6767780635">SlugMarket</a></b>, live on the App Store<br/>
-A UCSC only marketplace for listings, housing and chat. Swift, Supabase, row level security, real time messaging and push notifications.
+<a href="https://mukund604.github.io/SJStanceCustoms-Preview/"><img src="assets/sjstance.png" alt="SJ Stance Custom Wheels" /></a>
+<b><a href="https://mukund604.github.io/SJStanceCustoms-Preview/">SJ Stance Custom Wheels</a></b><br/>
+A storefront for a custom wheel shop, with a wheel visualizer and a quote flow.
 </td>
 <td width="50%" valign="top">
 <a href="https://mukundojha.dev"><img src="assets/portfolio.png" alt="Portfolio" /></a>
 <b><a href="https://mukundojha.dev">mukundojha.dev</a></b><br/>
-Everything in one place: projects, experience, publications and resume.
+Projects, experience, publications and resume in one place.
 </td>
 </tr>
 </table>
 
-* **VagBay**, launching soon: a marketplace and community app for Volkswagen Group enthusiasts. React Native, NestJS, PostgreSQL full text search, Redis backed rate limits.
+### Earlier work
 * **Avaada Energy** (2023 to 2025): first AI/ML hire. Java and Python services ran ML models across 32+ solar sites and saved $50K+ a year, and fleet alerting raised uptime 18%.
+* **[NyayNet](https://github.com/Mukund604/NyayNet)**: an agent that detects abusive and threatening Instagram comments with multilingual NLP and files structured complaints to India's cybercrime portal.
 
 ---
 
