@@ -53,16 +53,7 @@ I lead 4 engineers on a multitenant B2B school platform (Next.js, React, Postgre
 
 When agents share memory, one wrong update can quietly spread through the whole workflow. We treat shared memory like a database: agents propose, a guard decides, and checkpoints undo mistakes.
 
-```mermaid
-flowchart LR
-    A[Agent proposes update] --> G{Guard}
-    G -- safe --> C[Commit + checkpoint]
-    G -- low confidence --> Q[Open question]
-    G -- contradiction --> R[Reject]
-    G -- high risk contradiction --> B[Roll back to last checkpoint]
-    C --> M[(Shared memory)]
-    M --> A
-```
+<img src="assets/commit_before_trust.png" width="90%" alt="Commit Before Trust: propose, guard, commit or roll back" />
 
 | Result on HotpotQA vs full history passing | |
 | :--- | :--- |
