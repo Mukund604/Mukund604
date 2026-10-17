@@ -60,14 +60,15 @@ I lead 4 engineers on a multitenant B2B school platform (Next.js, React, Postgre
 When agents share memory, one wrong update can quietly spread through the whole workflow. We treat shared memory like a database: agents propose, a guard decides, and checkpoints undo mistakes.
 
 <p align="center">
-<img src="assets/commit_before_trust.png" width="90%" alt="Commit Before Trust: propose, guard, commit or roll back" />
+<img src="assets/commit_before_trust.png" width="80%" alt="Commit Before Trust: propose, guard, commit or roll back" />
 </p>
 
-| Result on HotpotQA vs full history passing | |
-| :--- | :--- |
-| Tokens, full guarded system under fault injection | **62% fewer** (6,573 to 2,520) |
-| Exact match, same setting | **0.50 to 0.54** |
-| Injected contradictions caught by the guard | **50 of 50** on HotpotQA, **50 of 50** on FEVER |
+<table align="center">
+<tr><th colspan="2">Result on HotpotQA vs full history passing</th></tr>
+<tr><td>Tokens, full guarded system under fault injection</td><td><b>62% fewer</b> (6,573 to 2,520)</td></tr>
+<tr><td>Exact match, same setting</td><td><b>0.50 to 0.54</b></td></tr>
+<tr><td>Injected contradictions caught by the guard</td><td><b>50 of 50</b> on HotpotQA, <b>50 of 50</b> on FEVER</td></tr>
+</table>
 
 ### 2. [Diagnosing How Frontier LLMs Fail at Lean: A miniF2F-v2 Evaluation Study](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean) *(under review, 2026)*
 *Mukund Ojha · UC Santa Cruz · [code and results](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean) · [LinkedIn write-up](https://www.linkedin.com/posts/mukund604_how-frontier-llms-fail-at-lean-ugcPost-7471693068656746496-hQH8/)*
