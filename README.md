@@ -1,68 +1,42 @@
-# 👋 Hi, I'm Mukund Ojha
+# Hi, I'm Mukund Ojha
 
-### Founder | AI/ML Engineer | MS CS @ UC Santa Cruz
+Software engineer building production AI systems. Lead App Engineer at TopTutors, founder of [GradeRight.org](https://graderight.org), and MS CS student at UC Santa Cruz (graduating December 2026).
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mukund604)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Mukund.singhojha@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://mukund-ojha-ai-research-portfolio.vercel.app)
-[![Location](https://img.shields.io/badge/San_Francisco-CA-blue?style=for-the-badge&logo=googlemaps&logoColor=white)](https://www.google.com/maps/place/San_Francisco,+CA)
-
----
-
-## ⚡ What I've Built
-
-I build production AI systems end to end, including agentic pipelines, LLM infrastructure, ML forecasting, and real time backends. I ship fast, own the full stack, and iterate on real usage data.
-
-* **GradeRight.org**: Founded and shipped an AI grading platform serving **30,000+ users** as the sole engineer, including agentic evaluation pipelines, hybrid model routing, MCP integrations, and vLLM serving from scratch.
-* **Annual Cost Savings**: Drove **$50,000+** in annual savings through automated forecasting and ETL pipelines across 32+ solar sites.
-* **System Reliability**: Captured **92% of faults** using a hybrid anomaly detection system for a **500+ unit robotic fleet**.
-* **Fleet Uptime**: Increased fleet uptime by **18%** through automated monitoring infrastructure built from the ground up.
+[![Portfolio](https://img.shields.io/badge/Portfolio-mukundojha.dev-000000?style=for-the-badge)](https://mukundojha.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mukund604/)
+[![Email](https://img.shields.io/badge/Email-muojha@ucsc.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muojha@ucsc.edu)
 
 ---
 
-## 🛠 Technical Toolkit
+## What I'm working on
 
-| Category | Skills |
+**TopTutors, Lead App Engineer.** I lead a team of 4 engineers on a multitenant B2B school platform built with Next.js, React, PostgreSQL and AWS. I built its AI assessment pipeline, which turns exam PDFs into graded tests and cut exam setup from hours to minutes, plus a tutor matching engine that scores each pair on 8 weighted dimensions.
+
+**[GradeRight.org](https://graderight.org), Founder.** An AI grading product with 30,000+ users that earns revenue, built and run by me alone. Light tasks go to a small model and heavy grading goes to self hosted models on vLLM. Every prompt or model change has to pass a golden set evaluation before it goes live, which keeps human overrides under 10%.
+
+## Research
+
+**Commit Before Trust: Transactional Shared Memory for Multi-Agent LLMs** (under review)
+Agents never write to shared memory directly. They propose updates, a guard commits or rejects each one, and checkpoints roll back bad ones. Against full history passing on HotpotQA, shared memory with guarded commits cut tokens 62% and raised exact match from 0.50 to 0.54, and the guard caught 50 of 50 injected contradictions.
+
+**[Diagnosing How Frontier LLMs Fail at Lean: A miniF2F-v2 Evaluation Study](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean)** (under review)
+An evaluation harness that checks every model proof with Lean, across 222 runs on 30 problems. A common 180 second timeout understated pass rates 3x.
+
+## Shipped and shipping
+
+* **SlugMarket**: a UCSC only marketplace, live on the App Store. Swift, Supabase, row level security, real time chat and push notifications.
+* **VagBay**: a marketplace and community app for Volkswagen Group enthusiasts, launching soon. React Native, NestJS, PostgreSQL, Redis.
+* **Avaada Energy** (2023 to 2025): first AI/ML hire. Java and Python services running ML models across 32+ solar sites saved $50K+ a year, and fleet alerting raised uptime 18%.
+
+## Toolkit
+
+| | |
 | :--- | :--- |
-| **Agentic AI / LLMs** | LLM APIs, LangGraph, CrewAI, AutoGen, RAG, vLLM, Fine tuning, MCP |
-| **ML / Data Science** | PyTorch, TensorFlow, Scikit learn, XGBoost, Time Series, Anomaly Detection |
-| **MLOps / Infra** | MLflow, Docker, Kubernetes, AWS, Azure, FastAPI, Apache Airflow |
-| **Data** | Pandas, NumPy, FAISS, PostgreSQL, Spark, ETL Pipelines |
-| **Languages** | Python, SQL, Bash, JavaScript |
+| **Languages** | Python, TypeScript, Java, SQL, Swift |
+| **AI** | LLM APIs, LangGraph, vLLM, RAG, MCP, PyTorch |
+| **Backend and infra** | FastAPI, NestJS, Next.js, PostgreSQL, Redis, Docker, Kubernetes, AWS |
 
----
+## Education
 
-## 🔬 Featured Projects
-
-### 🎓 [GradeRight.org](https://graderight.org) — AI Grading Platform
-
-* Founded and shipped production platform serving **30,000+ users** as sole engineer.
-* Built multistage LLM evaluation pipeline with parallel grading passes, hybrid model routing, and prompt injection sanitization.
-* Integrated MCP, webhooks, and vLLM serving; deployed automated regression testing against ground truth baselines.
-
-### ⚖️ [RAG Based Legal AI Agent](https://github.com/Mukund604)
-
-* Built multihop RAG agent using LangGraph with BM25/dense hybrid search and semantic reranking over a **5,000+ document corpus**.
-* Improved document recall by **22%** and cut research time by **40%** through metric driven iteration.
-
-### 🏠 [AI Real Estate Agent](https://github.com/Mukund604)
-
-* Achieved sub **60 second** latency on complex multiagent queries.
-
-### 🕵️ [Time Series Anomaly Framework](https://github.com/Mukund604)
-
-* Designed hybrid Transformer Autoencoder for multivariate anomaly detection across **dozens of sensors and millions of rows**.
-* Outperformed ARIMA baselines by **19% F1 score** with automated data drift monitoring and MLflow experiment tracking.
-
-### 🅿️ [SlugLife — Real Time Campus Parking](https://github.com/Mukund604)
-
-* Built iOS app with zero input parking detection using geofencing, Bluetooth, and motion signals fused into confidence scored events.
-* Bayesian occupancy estimator with time decay weighting across **70+ parking locations**; FastAPI backend with real time push notifications.
-
----
-
-## 🎓 Education & Certifications
-
-* **MS in Computer Science and Engineering** | UC Santa Cruz | GPA: 3.9/4.0 | *Expected December 2026*
-* **B.Tech in Computer Science Engineering** | Chitkara University | GPA: 4.0/4.0
-* **Certifications**: Machine Learning Specialization by Stanford Online and DeepLearning.AI · Generative AI with LLMs by DeepLearning.AI and AWS
+* **M.S. in Computer Science and Engineering**, UC Santa Cruz, GPA 3.92/4.00, graduating December 2026
+* **B.Tech in Computer Science Engineering**, Chitkara University, GPA 4.0/4.0
