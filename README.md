@@ -54,12 +54,14 @@ I lead 4 engineers on a multitenant B2B school platform (Next.js, React, Postgre
 4 papers: 2 under review in 2026 and 2 preprints.
 
 ### 1. Commit Before Trust: Transactional Shared Memory for Multi-Agent LLMs *(under review, 2026)*
-*Mukund Ojha, Sakshi Konnur, Saranya Kolachana · UC Santa Cruz*
+*Mukund Ojha, Sakshi Konnur, Saranya Kolachana · UC Santa Cruz* · [Read the LinkedIn write-up](https://www.linkedin.com/posts/mukund604_structured-shared-memory-and-checkpointed-ugcPost-7469642360646385665-17KC/) · [Paper on mukundojha.dev](https://mukundojha.dev/#publications)
 
 
 When agents share memory, one wrong update can quietly spread through the whole workflow. We treat shared memory like a database: agents propose, a guard decides, and checkpoints undo mistakes.
 
+<p align="center">
 <img src="assets/commit_before_trust.png" width="90%" alt="Commit Before Trust: propose, guard, commit or roll back" />
+</p>
 
 | Result on HotpotQA vs full history passing | |
 | :--- | :--- |
@@ -68,7 +70,7 @@ When agents share memory, one wrong update can quietly spread through the whole 
 | Injected contradictions caught by the guard | **50 of 50** on HotpotQA, **50 of 50** on FEVER |
 
 ### 2. [Diagnosing How Frontier LLMs Fail at Lean: A miniF2F-v2 Evaluation Study](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean) *(under review, 2026)*
-*Mukund Ojha · UC Santa Cruz · [code and results](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean)*
+*Mukund Ojha · UC Santa Cruz · [code and results](https://github.com/Mukund604/CSE290_LLM_Evaluation_Using_Lean) · [LinkedIn write-up](https://www.linkedin.com/posts/mukund604_how-frontier-llms-fail-at-lean-ugcPost-7471693068656746496-hQH8/)*
 
 
 I built a harness that checks every model proof with the Lean 4 compiler, then ran 222 runs across 30 problems, 8 difficulty strata and 3 seeds. A common 180 second timeout understated pass rates **3x**, and every failure was sorted into a taxonomy.
