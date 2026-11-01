@@ -1,31 +1,16 @@
-<h1 align="center">Mukund Ojha</h1>
-
-<p align="center"><b>I build AI systems that run in production, and I measure whether they work.</b></p>
-
-<p align="center">
-Founding Engineer at TopTutors · Founder of <a href="https://graderight.org">GradeRight.org</a> · MS CS at UC Santa Cruz, graduating December 2026
-</p>
-
-<p align="center"><i>Open to full time AI engineering and software engineering roles.</i></p>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png" />
+<source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png" />
+<img src="assets/banner-dark.png" width="100%" alt="Mukund Ojha, AI engineer and software engineer, open to full time roles. I build AI systems that run in production, and I measure whether they work. Founding Engineer at TopTutors, Founder of GradeRight.org, MS CS at UC Santa Cruz, graduating December 2026. 30,000+ users on GradeRight, 200+ schools on TopTutors, 150+ production releases, $50K+ saved a year at Avaada, 4 papers under review." />
+</picture>
 
 <p align="center">
-<a href="https://mukundojha.dev"><img src="https://img.shields.io/badge/Portfolio-mukundojha.dev-000000?style=for-the-badge" /></a>
-<a href="https://www.linkedin.com/in/mukund604/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:muojha@ucsc.edu"><img src="https://img.shields.io/badge/Email-muojha@ucsc.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><img src="https://img.shields.io/badge/SlugMarket-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" /></a>
+<a href="https://mukundojha.dev"><b>Portfolio</b></a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/mukund604/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
+<a href="mailto:muojha@ucsc.edu"><b>muojha@ucsc.edu</b></a> &nbsp;·&nbsp;
+<a href="https://graderight.org"><b>GradeRight.org</b></a> &nbsp;·&nbsp;
+<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><b>SlugMarket on the App Store</b></a>
 </p>
-
-<table align="center">
-<tr>
-<td align="center"><h3>30,000+</h3>users on GradeRight</td>
-<td align="center"><h3>200+</h3>schools on TopTutors</td>
-<td align="center"><h3>150+</h3>production releases</td>
-<td align="center"><h3>$50K+</h3>saved a year at Avaada</td>
-<td align="center"><h3>4</h3>papers under review</td>
-</tr>
-</table>
-
----
 
 ## GradeRight.org: AI grading for 30,000+ users
 
@@ -33,12 +18,13 @@ Founding Engineer at TopTutors · Founder of <a href="https://graderight.org">Gr
 
 <p align="center"><b><a href="https://github.com/Mukund604/Mukund604/blob/main/assets/graderight-intro.mp4">▶ Watch the full intro film (1:13, with sound)</a></b></p>
 
-I founded GradeRight and built it alone. It's an AI grading product that plugs into Canvas, earns revenue, and has more than 30,000 users.
+I founded GradeRight and built it alone. It's an AI grading product that plugs into Canvas, earns revenue, and has more than 30,000 users. Student 500 gets graded the same way as student 1.
 
-* **Consistent grades.** Every submission gets three parallel grading passes reconciled by a median, so student 500 is graded the same way as student 1.
-* **Model routing.** Light tasks go to a small model, and heavy grading goes to open source models I self host on vLLM.
-* **Every change is tested first.** A prompt or model change has to pass a golden set evaluation, which keeps human overrides under 10%.
-* **Safe inputs.** Every student submission is screened for prompt injection before it reaches a grading model.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/graderight-flow-dark.png" />
+<source media="(prefers-color-scheme: light)" srcset="assets/graderight-flow-light.png" />
+<img src="assets/graderight-flow-dark.png" width="100%" alt="GradeRight pipeline: Canvas submission, prompt injection screen, model routing, three parallel grading passes, median grade. Human overrides stay under 10%. Any prompt or model change has to pass a golden set evaluation first." />
+</picture>
 
 ## TopTutors: Founding Engineer
 
@@ -51,11 +37,60 @@ I lead 4 engineers on a multitenant B2B school platform used across 200+ schools
 * **Matching engine.** Scores every tutor and student pair on 8 weighted dimensions.
 * **Job system.** Async workers with retries and a serialized write queue that prevents races.
 
----
+## Apps
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><img src="assets/app-slugmarket.png" alt="SlugMarket new listing screen" /></a><br/>
+<b>SlugMarket</b><br/>
+<sub>Live on the App Store. A UCSC only marketplace for listings, housing and chat.</sub>
+</td>
+<td width="33%" valign="top">
+<img src="assets/app-vagbay.png" alt="VagBay home screen" /><br/>
+<b>VagBay</b><br/>
+<sub>Launching soon. Parts, cars, group buys and events for Volkswagen, Audi and Skoda enthusiasts in India.</sub>
+</td>
+<td width="33%" valign="top">
+<img src="assets/app-selectsocial.png" alt="The Select Social weekly introductions screen" /><br/>
+<b>The Select Social</b><br/>
+<sub>Launching in a few months. An invite only dating app with three curated introductions every Friday.</sub>
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>How each app is built, with more screens</b></summary>
+
+### SlugMarket
+<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><img src="assets/slugmarket_ios.png" width="100%" alt="SlugMarket iOS screens" /></a>
+
+Sign in is limited to verified ucsc.edu Google accounts, data is locked down with Postgres row level security, and buyers and sellers get real time chat with push notifications. There's also a web version in Next.js. **Swift, SwiftUI, Supabase, PostgreSQL, APNs.**
+
+### VagBay
+<img src="assets/vagbay_ios.png" width="100%" alt="VagBay screens" />
+
+The API has rotating refresh tokens, Postgres full text search with a radius filter, Redis backed rate limits across replicas, and a dealer verification queue in a Next.js admin dashboard. **React Native, Expo, TypeScript, NestJS, PostgreSQL, Redis, Docker.**
+
+### The Select Social
+<img src="assets/selectsocial_onboarding.png" width="100%" alt="The Select Social: landing, sign in, onboarding and membership screens" />
+<img src="assets/selectsocial_members.png" width="100%" alt="The Select Social: weekly introductions and match profile screens" />
+
+Applicants go through onboarding and live selfie verification before a hand review. Members get a "why we matched you" breakdown from an explainable matching engine that runs as a weekly batch. I wrote 225 backend tests covering auth, matching and moderation, run in CI on every change, plus 300+ iOS unit tests. **Python, FastAPI, PostgreSQL, Swift, SwiftUI.**
+
+</details>
 
 ## Research
 
 All 4 papers are under review.
+
+1. **[Commit Before Trust: Transactional Shared Memory for Multi-Agent LLMs](https://mukundojha.dev/papers/commit-before-trust.pdf).** 62% fewer tokens than full history passing under fault injection, and the guard caught 50 of 50 injected contradictions.
+2. **[Diagnosing How Frontier LLMs Fail at Lean](https://mukundojha.dev/papers/frontier-llms-fail-at-lean.pdf).** 222 compiler checked runs showing that a common 180 second timeout understated pass rates 3x.
+3. **[Two Stage Residual Models for Robust Cloud Ramp Prediction](https://mukundojha.dev/papers/two-stage-residual-cloud-ramp.pdf).** Forecasts sudden drops in solar output when clouds pass over utility scale plants.
+4. **RAG Robots: Retrieval-Augmented Generation for Enhanced Robotic Task Planning.** Retrieval over a hybrid graph and vector database cut hallucination driven errors on furniture assembly tasks.
+
+<details>
+<summary><b>Authors, figures and full results</b></summary>
 
 ### [Commit Before Trust: Transactional Shared Memory for Multi-Agent LLMs](https://mukundojha.dev/papers/commit-before-trust.pdf)
 *Mukund Ojha, Sakshi Konnur, Saranya Kolachana · UC Santa Cruz, 2026* · [PDF](https://mukundojha.dev/papers/commit-before-trust.pdf) · [LinkedIn write-up](https://www.linkedin.com/posts/mukund604_structured-shared-memory-and-checkpointed-ugcPost-7469642360646385665-17KC/)
@@ -115,34 +150,16 @@ Gives robot agents retrieval over a hybrid graph and vector database, so a plann
 </p>
 </details>
 
----
-
-## Apps
-
-### SlugMarket, live on the App Store
-<a href="https://apps.apple.com/us/app/slugmarket/id6767780635"><img src="assets/slugmarket_ios.png" width="100%" alt="SlugMarket iOS screens" /></a>
-
-A UCSC only marketplace for listings, housing and chat. Sign in is limited to verified ucsc.edu Google accounts, data is locked down with Postgres row level security, and buyers and sellers get real time chat with push notifications. There's also a web version in Next.js. **Swift, SwiftUI, Supabase, PostgreSQL, APNs.**
-
-### VagBay, launching soon
-<img src="assets/vagbay_ios.png" width="100%" alt="VagBay screens" />
-
-A marketplace and community app for Volkswagen, Audi and Skoda enthusiasts in India: parts and cars, group buys, events and messaging. The API has rotating refresh tokens, Postgres full text search with a radius filter, Redis backed rate limits across replicas, and a dealer verification queue in a Next.js admin dashboard. **React Native, Expo, TypeScript, NestJS, PostgreSQL, Redis, Docker.**
-
-### The Select Social, launching in a few months
-<img src="assets/selectsocial_onboarding.png" width="100%" alt="The Select Social: landing, sign in, onboarding and membership screens" />
-<img src="assets/selectsocial_members.png" width="100%" alt="The Select Social: weekly introductions and match profile screens" />
-
-An invite only dating app for urban India, built around three curated introductions every Friday instead of a swipe feed. Applicants go through onboarding and live selfie verification before a hand review. Members get a "why we matched you" breakdown from an explainable matching engine that runs as a weekly batch. I wrote 225 backend tests covering auth, matching and moderation, run in CI on every change, plus 300+ iOS unit tests. **Python, FastAPI, PostgreSQL, Swift, SwiftUI.**
-
----
+</details>
 
 ## AI agents
 
 * **CaseLumen.** A multi hop RAG agent over a 5,000+ document legal corpus that cut research time 40% and raised recall 22%. I deployed it end to end, from OCR of scanned PDFs to retrieval, with self hosted Qdrant. **Python, LangChain, Qdrant, Docker.**
 * **[NyayNet](https://github.com/Mukund604/NyayNet).** Detects abusive and threatening Instagram comments with multilingual NLP and files structured complaints to India's cybercrime portal.
 
-## Sites
+<details>
+<summary><b>Sites</b></summary>
+<br/>
 
 <table>
 <tr>
@@ -159,15 +176,18 @@ A storefront for a custom wheel shop, with a wheel visualizer and a quote flow.
 </tr>
 </table>
 
----
+</details>
 
-## Experience
+<details>
+<summary><b>Experience, toolkit and education</b></summary>
+
+### Experience
 
 * **Founding Engineer, TopTutors** (May 2026 to present)
 * **Founder, GradeRight.org** (September 2025 to present)
 * **Assistant Manager, Machine Learning Engineer, Avaada Energy** (September 2023 to September 2025). First dedicated AI/ML hire, and led the AI and ML team. Java and Python services ran ML models across 32+ solar sites and saved $50K+ a year, and predictive maintenance alerts across 500+ units raised uptime 18%.
 
-## Toolkit
+### Toolkit
 
 | | |
 | :--- | :--- |
@@ -176,7 +196,9 @@ A storefront for a custom wheel shop, with a wheel visualizer and a quote flow.
 | **Backend** | FastAPI, NestJS, Next.js, React, Prisma, PostgreSQL, Redis |
 | **Infrastructure** | AWS, Docker, Kubernetes, CI/CD |
 
-## Education
+### Education
 
 * **M.S. in Computer Science and Engineering**, UC Santa Cruz, GPA 3.92/4.00, graduating December 2026
 * **B.Tech in Computer Science Engineering**, Chitkara University, GPA 4.0/4.0
+
+</details>
